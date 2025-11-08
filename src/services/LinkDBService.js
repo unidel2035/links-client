@@ -3,7 +3,7 @@ import { exec } from 'child_process';
 import { promisify } from 'util';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import logger from '../../utils/logger.js';
+import logger from '../utils/logger.js';
 
 const execAsync = promisify(exec);
 

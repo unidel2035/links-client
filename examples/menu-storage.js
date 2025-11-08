@@ -1,5 +1,5 @@
 // test-linkdb-menu.js - Test script for link-cli based menu storage
-import MenuStorageService from '../backend/monolith/src/services/linkdb/MenuStorageService.js';
+import { MenuStorageService } from '../src/index.js';
 
 const menuStorage = new MenuStorageService();
 

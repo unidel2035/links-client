@@ -119,7 +119,7 @@ Low-level service for executing link-cli commands.
 **Example Usage**:
 
 ```javascript
-import LinkDBService from './services/linkdb/LinkDBService.js';
+import LinkDBService from './services/LinkDBService.js';
 
 const linkDB = new LinkDBService();
 
@@ -148,7 +148,7 @@ High-level service for menu storage with link-cli.
 **Example Usage**:
 
 ```javascript
-import MenuStorageService from './services/linkdb/MenuStorageService.js';
+import MenuStorageService from './services/MenuStorageService.js';
 
 const menuStorage = new MenuStorageService();
 

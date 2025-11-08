@@ -208,7 +208,7 @@ High-level service for authentication data storage using link-cli.
 **Example Usage**:
 
 ```javascript
-import AuthStorageService from './services/linkdb/AuthStorageService.js';
+import AuthStorageService from './services/AuthStorageService.js';
 
 const authStorage = new AuthStorageService();
 
@@ -634,7 +634,7 @@ If you have existing user data in PostgreSQL/MySQL:
 ### Example Migration Script
 
 ```javascript
-import AuthStorageService from './services/linkdb/AuthStorageService.js';
+import AuthStorageService from './services/AuthStorageService.js';
 import oldDatabase from './old-db-connection.js';
 
 const authStorage = new AuthStorageService();

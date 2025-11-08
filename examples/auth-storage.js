@@ -1,6 +1,6 @@
 // test-auth-linkdb.js - Test AuthStorageService with link-cli database
-import AuthStorageService from '../backend/monolith/src/services/linkdb/AuthStorageService.js';
-import logger from '../backend/monolith/src/utils/logger.js';
+import AuthStorageService from '../src/services/AuthStorageService.js';
+import logger from '../src/utils/logger.js';
 
 // Configure logger to show info level
 logger.level = 'info';

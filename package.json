@@ -1,0 +1,29 @@
+{
+  "name": "@unidel2035/links-client",
+  "version": "1.0.0",
+  "description": "Node.js client library for link-cli (Links Theory database)",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": [
+    "link-cli",
+    "links-theory",
+    "database",
+    "associative",
+    "clink"
+  ],
+  "author": "DronDoc Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/unidel2035/links-client.git"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "peerDependencies": {
+    "express": "^4.0.0"
+  }
+}

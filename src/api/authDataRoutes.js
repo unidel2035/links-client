@@ -1,6 +1,6 @@
 // authDataLinkDB.js - API routes for authentication data management using LinkDB
 import express from 'express';
-import AuthStorageService from '../../services/linkdb/AuthStorageService.js';
+import AuthStorageService from '../services/AuthStorageService.js';
 import logger from '../../utils/logger.js';
 import crypto from 'crypto';
 

@@ -7,6 +7,10 @@ export { default as MenuStorageService } from './services/menu-storage-service.j
 // Re-export utilities
 export { default as logger } from './utils/logger.js';
 
+// Re-export universal recursive API
+export { default as ILinks } from './api/ilinks.js';
+export { default as RecursiveLinks } from './api/recursive-links.js';
+
 // Re-export API routes (optional, for Express integration)
 export { default as menuConfigRoutes } from './api/menu-config-routes.js';
 export { default as authDataRoutes } from './api/auth-data-routes.js';

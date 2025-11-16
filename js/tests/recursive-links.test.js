@@ -1,5 +1,5 @@
 // Test file for RecursiveLinks API
-import { describe, it, before, after } from 'node:test';
+import { describe, it, before, after } from 'test-anywhere';
 import assert from 'node:assert';
 import RecursiveLinks from '../src/api/recursive-links.js';
 import fs from 'fs';
@@ -149,21 +149,6 @@ describe('RecursiveLinks API', () => {
       assert.ok(notation.includes('2:'), 'Should include reference label "2"');
     });
 
-    it('should convert nested object with refs to Links notation using toLinksNotationWithRefs (backward compatibility)', () => {
-      const notation = recursiveLinks.toLinksNotationWithRefs({
-        "1": [1, 2]
-      });
-      assert.ok(notation.includes('1:'), 'Should include reference label');
-      assert.ok(notation.includes('('), 'Should contain parentheses');
-    });
-
-    it('should convert complex nested object to Links notation using toLinksNotationWithRefs (backward compatibility)', () => {
-      const notation = recursiveLinks.toLinksNotationWithRefs({
-        "1": [1, { "2": [5, 6] }, 3, 4]
-      });
-      assert.ok(notation.includes('1:'), 'Should include reference label "1"');
-      assert.ok(notation.includes('2:'), 'Should include reference label "2"');
-    });
   });
 
   describe('Parse Links Notation', () => {

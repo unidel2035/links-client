@@ -252,23 +252,6 @@ class RecursiveLinks:
         # Fallback for primitive values
         return str(input_data)
 
-    def to_links_notation_with_refs(self, nested_dict: Dict[str, Any]) -> str:
-        """
-        Convert nested dict with references to Links notation string
-
-        .. deprecated::
-            Use :meth:`to_links_notation` instead - it now handles both lists and dicts
-
-        { "1": [1, { "2": [5, 6] }, 3, 4] } -> "(1: 1 (2: 5 6) 3 4)"
-
-        Args:
-            nested_dict: Nested dict structure
-
-        Returns:
-            Links notation string with references
-        """
-        # Delegate to the universal to_links_notation function
-        return self.to_links_notation(nested_dict)
 
     def parse_links_notation(self, notation: str) -> List[Any]:
         """

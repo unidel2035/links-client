@@ -252,12 +252,6 @@ notation = recursive_links.to_links_notation({
 # Returns: "(1: 1 (2: 5 6) 3 4)"
 ```
 
-#### `toLinksNotationWithRefs(nestedObject)` / `to_links_notation_with_refs(nestedDict)`
-
-**Deprecated:** Use `toLinksNotation()` / `to_links_notation()` instead - it now handles both arrays/lists and objects/dicts.
-
-This method is kept for backward compatibility and internally delegates to `toLinksNotation()` / `to_links_notation()`.
-
 #### `parseLinksNotation(notation)`
 
 Parses Links notation string to nested array/list.

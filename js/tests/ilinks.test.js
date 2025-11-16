@@ -1,5 +1,5 @@
 // Test file for ILinks flat API
-import { describe, it, before, after } from 'node:test';
+import { describe, it, before, after } from 'test-anywhere';
 import assert from 'node:assert';
 import ILinks from '../src/api/ilinks.js';
 import fs from 'fs';

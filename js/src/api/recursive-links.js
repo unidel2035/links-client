@@ -239,18 +239,6 @@ class RecursiveLinks {
     return String(input);
   }
 
-  /**
-   * Convert nested object with references to Links notation string
-   * @deprecated Use toLinksNotation() instead - it now handles both arrays and objects
-   * { "1": [1, { "2": [5, 6] }, 3, 4] } -> "(1: 1 (2: 5 6) 3 4)"
-   *
-   * @param {object} nestedObject - Nested object structure
-   * @returns {string} - Links notation string with references
-   */
-  toLinksNotationWithRefs(nestedObject) {
-    // Delegate to the universal toLinksNotation function
-    return this.toLinksNotation(nestedObject);
-  }
 
   /**
    * Parse Links notation string to nested array

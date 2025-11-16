@@ -140,21 +140,6 @@ class TestRecursiveLinksAPI(unittest.TestCase):
         self.assertIn("1:", notation)
         self.assertIn("2:", notation)
 
-    def test_to_links_notation_with_refs_simple(self):
-        """Test converting nested dict with refs to Links notation using to_links_notation_with_refs (backward compatibility)"""
-        notation = self.recursive_links.to_links_notation_with_refs({
-            "1": [1, 2]
-        })
-        self.assertIn("1:", notation)
-        self.assertIn("(", notation)
-
-    def test_to_links_notation_with_refs_complex(self):
-        """Test converting complex nested dict to Links notation using to_links_notation_with_refs (backward compatibility)"""
-        notation = self.recursive_links.to_links_notation_with_refs({
-            "1": [1, {"2": [5, 6]}, 3, 4]
-        })
-        self.assertIn("1:", notation)
-        self.assertIn("2:", notation)
 
     def test_parse_links_notation_simple(self):
         """Test parsing simple Links notation to nested list"""
